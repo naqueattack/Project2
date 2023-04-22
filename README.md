@@ -39,32 +39,7 @@ Overall, some work to be done to make this a worthwhile model. Next steps would 
 
 Another issue with the model is it's based off only ~100 POIs per location and many locations likely have many more places near them than that. It would probably be possible to sample multiple times from the same API and make a composite, but this would push me over the my monthly requests so I opted not to.
 
-OLS Regression Results                            
-==============================================================================
-Dep. Variable:              freebikes   R-squared:                       0.183
-Model:                            OLS   Adj. R-squared:                  0.180
-Method:                 Least Squares   F-statistic:                     56.42
-Date:                Sat, 22 Apr 2023   Prob (F-statistic):           5.11e-53
-Time:                        15:48:09   Log-Likelihood:                -3516.0
-No. Observations:                1264   AIC:                             7044.
-Df Residuals:                    1258   BIC:                             7075.
-Df Model:                           5                                         
-Covariance Type:            nonrobust                                         
-================================================================================
-                   coef    std err          t      P>|t|      [0.025      0.975]
---------------------------------------------------------------------------------
-const          317.2473    194.439      1.632      0.103     -64.214     698.708
-longitude        3.6222      2.219      1.632      0.103      -0.731       7.976
-review_count  -5.11e-05   1.47e-05     -3.476      0.001   -7.99e-05   -2.23e-05
-Bar              0.1108      0.017      6.494      0.000       0.077       0.144
-Restaurant       0.0258      0.012      2.140      0.033       0.002       0.049
-POI              0.1712      0.022      7.695      0.000       0.128       0.215
-==============================================================================
-Omnibus:                      345.315   Durbin-Watson:                   1.657
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              962.673
-Skew:                           1.398   Prob(JB):                    9.08e-210
-Kurtosis:                       6.234   Cond. No.                     3.61e+07
-==============================================================================
+<img src="\images\test.png" alt="Test Stats" />
 
 Results for tests can be found in notebooks/model_building.ipynb
 
